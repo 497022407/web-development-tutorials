@@ -1,0 +1,79 @@
+* {
+    /* margin: 0;
+    padding: 0; */
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font: normal 14px/27px Helvetica;
+}
+header .header-top {
+    width: 1201px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+header .header-top .logo {
+    padding: 27px;
+    width: 221px;
+    height: 63px;
+    float: left;
+}
+header .header-top .logo h1{
+    width: 211px;
+    height: 63px;
+    /* background-color: orange; */
+}
+header .header-top .tool {
+    float: right;
+    width: 266px;
+    height: 77px;
+    /* background-color: green; */
+    padding-top: 22px;
+}
+header .header-top .tool .tel {
+    /* height: 32px;
+    width: 25px; */
+}
+header .header-top .tool .telnumber {
+    font-size: 20px;
+    color: #00978E;
+    display: inline-block;
+    /* height: 158px;
+    width: 26px; */
+    text-align: center;
+}
+header .header-top .tool .r1 {
+    margin-bottom: 14px;
+}
+header .header-top .tool .r1 .icon {
+    width: 24px;
+    height: 24px;
+}
+header .header-top .tool .r1 .en_icon {
+    margin-right: 10px;
+}
+header .header-top .tool .r2 {
+    width: 264px;
+    height: 28px;
+    border: 1px solid #CACACA 60%;
+}
+header .header-top .tool input {
+    float: left;
+    width: 204px;
+    height: 28px;
+    padding-left: 20px;
+    outline: none;
+}
+header .header-top .tool button {
+    float: left;
+    width: 10px;
+    height: 10px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
