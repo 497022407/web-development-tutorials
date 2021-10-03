@@ -1,6 +1,6 @@
 * {
-    /* margin: 0;
-    padding: 0; */
+    margin: 0;
+    padding: 0;
 }
 
 ul,
@@ -125,4 +125,181 @@ header .main-nav ul li a {
 
 header .main-nav ul li a:hover {
     background-color: orange;
+}
+
+.banner {
+    width: 100%;
+    position: relative;
+}
+
+.banner .banner-img {
+    width: 100%;
+}
+
+.banner .center {
+    position: absolute;
+    width: 1200px;
+    height: 300px;
+    /* background-color: orange; */
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -600px;
+}
+
+.banner .center h2 {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.banner .center .left-btn {
+    background-color: rgba(0, 0, 0, .3);
+    width: 56px;
+    height: 64px;
+    left: 0px;
+    top: 50%;
+    position: absolute;
+    margin-top: -32px;
+}
+
+.banner .center .right-btn {
+    background-color: rgba(0, 0, 0, .3);
+    width: 56px;
+    height: 64px;
+    right: 0px;
+    top: 50%;
+    position: absolute;
+    margin-top: -32px;
+}
+
+.banner ol {
+    width: 120px;
+    height: 12px;
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    /* background-color: red; */
+    bottom: 12px;
+    padding: 0px;
+}
+
+.banner ol li {
+    width: 20px;
+    height: 12px;
+    background-color: white;
+    float: left;
+    margin-right: 10px;
+    /* position: absolute; */
+}
+
+.banner ol li:last-child {
+    margin-right: 0px;
+}
+
+.banner ol li.cur {
+    width: 30px;
+    background-color: #00978E;
+}
+
+.content .useful-link {
+    width: 906px;
+    height: 194px;
+    margin: 0 auto;
+    /* background-color: orange; */
+    overflow: hidden;
+    margin-top: 71px;
+}
+
+.content .useful-link ul li {
+    float: left;
+    width: 106px;
+    margin-right: 53.9px;
+}
+
+.content .useful-link ul li span {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-family: Helvetica;
+    color: #000000 100%;
+}
+
+.content .useful-link ul li:last-child {
+    margin-right: 0px;
+}
+
+.content .news-and-notice {
+    height: 376px;
+    width: 1200px;
+    /* background-color: red; */
+    margin: 0 auto;
+    margin-top: 56px;
+    margin-bottom: 50px;
+}
+
+.content .news-and-notice .news {
+    float: left;
+    width: 878px;
+    height: 376px;
+    /* background-color: blue; */
+}
+
+.content .news-and-notice .notice {
+    /* background-color: green; */
+    height: 376px;
+    width: 322px;
+    float: left;
+}
+
+.content .news-and-notice .news .news-content .hot-news {
+    float: left;
+    position: relative;
+    width: 422px;
+    height: 328px;
+}
+
+.content .news-and-notice .news .news-content .hot-news .info {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 40px;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    line-height: 40px;
+    color: white;
+}
+
+.content .news-and-notice .news .news-content ul {
+    float: left;
+    width: 456px;
+    height: 328px;
+}
+
+.content .news-and-notice .news .news-content ul li {
+    margin-bottom: 10px;
+    padding: 0px 10px 0px 10px;
+    /* float: left; */
+}
+
+.content .news-and-notice .news .news-content ul li span {
+    float: right;
+}
+
+.content .news-and-notice .notice ol li .number {
+    float: left;
+    width: 53px;
+    height: 57px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    line-height: 57px;
+    background-color: #00978e;
+    margin-bottom: 14px;
+    margin-right: 16px;
+}
+
+.content .news-and-notice .notice ol li {
+    overflow: hidden;
 }
