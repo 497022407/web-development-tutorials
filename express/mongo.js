@@ -13,23 +13,23 @@ exports.connect = (MongoClient) => {
         const db = client.db(dbName);
 
         const userCollection = db.collection('users');
-        // userCollection.find().sort({_id:-1}).toArray((err, result) => {
-        //     if (err) {
-        //         console.error('mongodb find error', err);
-        //         return;
-        //     }
-        //     console.log('result:', result);
-        // })
-        // userCollection.insertOne({
-        //     username: 'Liudehua',
-        //     password: 'abc',
-        //     age: 30,
-        //     city: 'Xianggang',
-        // }, (err, result) => {
-        //     if (err) {
-        //         console.log(err);
-        //         return;
-        //     }
+        userCollection.find().sort({ _id: -1 }).toArray((err, result) => {
+                if (err) {
+                    console.error('mongodb find error', err);
+                    return;
+                }
+                console.log('result:', result);
+            })
+            // userCollection.insertOne({
+            //     username: 'Liudehua',
+            //     password: 'abc',
+            //     age: 30,
+            //     city: 'Xianggang',
+            // }, (err, result) => {
+            //     if (err) {
+            //         console.log(err);
+            //         return;
+            //     }
 
         //     console.log('insert result:',result.insertedId);
         // })
@@ -44,15 +44,17 @@ exports.connect = (MongoClient) => {
         //         console.log('update result', result);
         //     }
         // )
-        userCollection.deleteOne({ username: 'WangWu' }, (err, result) => {
-                if (err) {
-                    console.log(err);
-                    return;
-                }
-                console.log('delete result', result);
-            }
-        )
+        // userCollection.deleteOne({ username: 'WangWu' }, (err, result) => {
+        //         if (err) {
+        //             console.log(err);
+        //             return;
+        //         }
+        //         console.log('delete result', result);
+        //     }
+        // )
 
         // client.close();
     })
 };
+
+exports.connect(require('mongodb').MongoClient)
